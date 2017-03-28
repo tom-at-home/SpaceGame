@@ -1,0 +1,6 @@
+c:\users\tomaszu\documents\visual studio 2015\Projects\SpaceGame\SpaceGame\bin\Debug\SpaceGame.exe.config
+c:\users\tomaszu\documents\visual studio 2015\Projects\SpaceGame\SpaceGame\bin\Debug\SpaceGame.exe
+c:\users\tomaszu\documents\visual studio 2015\Projects\SpaceGame\SpaceGame\bin\Debug\SpaceGame.pdb
+c:\users\tomaszu\documents\visual studio 2015\Projects\SpaceGame\SpaceGame\obj\Debug\SpaceGame.csprojResolveAssemblyReference.cache
+c:\users\tomaszu\documents\visual studio 2015\Projects\SpaceGame\SpaceGame\obj\Debug\SpaceGame.exe
+c:\users\tomaszu\documents\visual studio 2015\Projects\SpaceGame\SpaceGame\obj\Debug\SpaceGame.pdb
