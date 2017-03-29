@@ -73,7 +73,8 @@ namespace SpaceGame
 
         void RenderSpace()
         {
-            for(int i = 0; i < spaces.Length; i++)
+            Console.Clear();
+            for (int i = 0; i < spaces.Length; i++)
             {
                 Console.Write("[");
                 if(theShip.CurrSpace == spaces[i])
@@ -82,9 +83,9 @@ namespace SpaceGame
                 }
                 for(int j = 0; j < theShip.bullets.Count; j++)
                 {
-                    if(theShip.bullets[j]. )
+                    //if(theShip.bullets[j]. )
                 }
-                //else Console.Write(" ");       
+                //else Console.Write(" ");
                 Console.Write("]");
             }
             Console.Write("\n");
@@ -92,17 +93,18 @@ namespace SpaceGame
 
         void ReadCommand()
         {
-            while (true)
-            {
 
+            while (true)
+            {                
                 Console.WriteLine("Was möchtest Du jetzt tun? > ");
-                string cmd = Convert.ToString(Console.ReadLine());
+                //string cmd = Convert.ToString(Console.ReadLine());
 
                 //Bullet b = theShip?.bullets[0] ?? new Bullet("", new Space(""));
 
-                /*
-                ConsoleKeyInfo cki = Console.ReadKey();
+                
+                ConsoleKeyInfo cmd = Console.ReadKey();
 
+                /*
                 switch( cki.Key )
                 {
                     case ConsoleKey.LeftArrow:
@@ -112,21 +114,21 @@ namespace SpaceGame
                 */
 
 
-                switch (cmd)
+                switch (cmd.Key)
                 {
-                    case "a":
+                    case ConsoleKey.A:
                         theShip.Move("west");
                         RenderSpace();
                         break;
-                    case "d":
+                    case ConsoleKey.D:
                         theShip.Move("east");
                         RenderSpace();
                         break;
-                    case "f":
+                    case ConsoleKey.F:
                         theShip.Fire();
                         RenderSpace();
                         break;
-                    case "q":
+                    case ConsoleKey.Q:
                         return;
                     default:
                         Console.WriteLine("Ich habe Dich nicht verstanden");
